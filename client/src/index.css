@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --font-audiowide: "Audiowide", "serif";
+    --font-inter: "Inter", "sans-serif";
+    --color-primary-orange: #FF8C00;
+    --color-primary-blue: #002F5F;
+    --color-sec-orange: #FFB347;
+    --color-sec-gray: #F1F3F6;
+}
+
+/* Hide number input spinners in all major browsers */
+input[type=number].no-spinner {
+  appearance: textfield;          /* Standard */
+  -moz-appearance: textfield;     /* Firefox */
+}
+
+input[type=number].no-spinner::-webkit-inner-spin-button,
+input[type=number].no-spinner::-webkit-outer-spin-button {
+  appearance: none;               /* Standard */
+  -webkit-appearance: none;       /* Chrome, Safari, Edge */
+  margin: 0;
+}
